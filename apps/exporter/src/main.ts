@@ -17,4 +17,4 @@ const speedometer = new Speedometer({
 // styleAttr.value = 'text/css';
 // styleOverride.attributes.setNamedItem(styleAttr)
 // console.log(speedometer);
-export default speedometer;
+// export default speedometer;
