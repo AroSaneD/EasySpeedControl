@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "apps/exporter"
+		},
+		{
+			"path": "apps/video-extensions"
+		}
+	],
+	"settings": {}
+}

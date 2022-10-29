@@ -1,12 +1,11 @@
-import Speedometer from './lib/Speedometer.svelte';
-
-// const app = new App({
-//     target: document.getElementById('app'),
-//     // target: document.body
+// Reexport your entry components here
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import SpeedometerSvelte from './Speedometer.svelte';
+export const Speedometer = SpeedometerSvelte;
+// const speedometer = new SpeedometerSvelte({
+// 	target: document.body
 // });
-const speedometer = new Speedometer({
-    target: document.body,
-});
 
 // const styleOverride = document.createElement('style');
 // styleOverride.innerText = `body {background-color: red;}`;
@@ -16,4 +15,4 @@ const speedometer = new Speedometer({
 // styleAttr.value = 'text/css';
 // styleOverride.attributes.setNamedItem(styleAttr)
 // console.log(speedometer);
-export default speedometer;
+// export default speedometer;
