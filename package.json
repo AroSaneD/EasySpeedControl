@@ -10,6 +10,7 @@
         "turbo": "^1.6.2"
     },
     "workspaces": [
-        "apps/*"
+        "apps/*",
+        "extensions/*"
     ]
 }

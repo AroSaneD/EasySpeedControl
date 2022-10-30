@@ -7,7 +7,7 @@
 // @match       https://www.facebook.com/*
 // @match       https://www.reddit.com/*
 // @grant       none
-// @version     0.1
+// @version     <%- currDate %>
 // @author      -
 // @description A userscript to add more utilities to websites that embed video elements/content.
 // ==/UserScript==
