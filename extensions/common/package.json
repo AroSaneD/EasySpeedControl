@@ -1,5 +1,5 @@
 {
-	"name": "@arosaned/video-extensions",
+	"name": "@arosaned/common",
 	"private": true,
 	"version": "0.0.1",
 	"scripts": {
@@ -12,7 +12,6 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@arosaned/dynamic-caching": "workspace:*",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"@sveltejs/package": "next",
