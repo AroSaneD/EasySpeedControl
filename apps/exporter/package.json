@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build && npm run build-userscript",
-        "build-userscript": "ts-node src/build-script",
+        "build-userscript": "ts-node src/build-script.ts",
         "preview": "vite preview",
         "lint": "svelte-check --tsconfig ./tsconfig.json"
     },
