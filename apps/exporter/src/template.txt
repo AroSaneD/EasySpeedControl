@@ -7,13 +7,13 @@
 // @match       https://www.facebook.com/*
 // @match       https://www.reddit.com/*
 // @grant       none
-// @version     <%- currDate %>
+// @version     $currentDate
 // @author      -
 // @description A userscript to add more utilities to websites that embed video elements/content.
 // ==/UserScript==
 
-<%- jsBundle %>
+$jsBundle
 
 const styleOverride = document.createElement('style');
-styleOverride.innerText = `<%- cssBundle %>`;
+styleOverride.innerText = `$cssBundle`;
 document.head.appendChild(styleOverride);
