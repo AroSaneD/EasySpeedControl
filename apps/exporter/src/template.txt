@@ -3,7 +3,7 @@
 // @namespace   Scripts
 // @match       https://www.youtube.com/*
 // @match       https://www.netflix.com/*
-// @match       https://www.twitch.com/*
+// @match       https://www.twitch.tv/*
 // @match       https://www.facebook.com/*
 // @match       https://www.reddit.com/*
 // @grant       none
