@@ -1,6 +1,12 @@
-export function updateVideos(newSpeed: number) {
+export function getVideos() {
     const videos = [...document.querySelectorAll('video')];
-    videos.forEach((v) => {
-        v.playbackRate = newSpeed;
-    });
+    return videos;
+}
+
+export function updateVideos(callback: (v: HTMLVideoElement) => void) {
+    getVideos().forEach(callback);
+}
+
+export function updateVideosSpeed(newSpeed: number) {
+    updateVideos(v => v.playbackRate = newSpeed);
 }

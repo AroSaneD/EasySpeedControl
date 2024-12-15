@@ -11,7 +11,8 @@
 	import { cubicInOut } from 'svelte/easing';
 	import { createSpeedStore } from '@arosaned/dynamic-caching/package';
 	import { clock } from './stores/timer-store';
-	import { updateVideos } from './update-videos';
+	import { updateVideosSpeed } from './update-videos';
+	import { extraNavigation } from './extra-navigation';
 
 	const opacity = tweened(0, {
 		duration: 250,
@@ -24,13 +25,15 @@
 		opacity.set(1);
 		timeout = setTimeout(() => opacity.set(0), 1000);
 	}
-	$: $clock && updateVideos($speed);
+	$: $clock && updateVideosSpeed($speed);
 
 	function handleKeyDown(e: KeyboardEvent) {
 		if (e.key == '+') {
 			speed.increment();
 		} else if (e.key == '-') {
 			speed.decrement();
+		} else {
+			extraNavigation(e);
 		}
 	}
 </script>
